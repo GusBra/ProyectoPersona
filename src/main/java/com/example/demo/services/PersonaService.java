@@ -26,6 +26,19 @@ public List<Persona> findAll() {
     return personaRepository.findAll();
 }
 
+/*
+@Override
+public Optional<Persona>findbyPais(Long id_pais){
+    return personaRepository.findbyPais(id_pais);
+}
+
+*/
+
+@Override
+public List<Persona>findAll2(){
+    return personaRepository.findAll2();
+}
+
 @Override
 public void delete(Persona entity) {
     personaRepository.delete(entity);    

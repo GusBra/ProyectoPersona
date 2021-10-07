@@ -40,5 +40,16 @@ public class PersonaController{
             Persona p = personaService.save(persona);
         return ResponseEntity.status(HttpStatus.CREATED).body(p);
     }
+
+
+
+    @GetMapping("/list-by-pais")
+    private ResponseEntity<List<Persona>>GetPersonas2(){
+
+        return ResponseEntity.ok(personaService.findAll2());
+    }
     
+
+
+
 }
